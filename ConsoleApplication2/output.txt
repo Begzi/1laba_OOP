@@ -1,0 +1,29 @@
+
+Filled container. 
+Container contains 24 elements.
+1: It is Circle: x = 3, y = 4, r = 5 orange
+2: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+3: It is Circle: x = 3, y = 4, r = 5 orange
+4: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+5: It is Circle: x = 3, y = 4, r = 5 orange
+6: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+7: It is Circle: x = 3, y = 4, r = 5 orange
+8: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+9: It is Circle: x = 3, y = 4, r = 5 orange
+10: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+11: It is Circle: x = 3, y = 4, r = 5 orange
+12: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+13: It is Circle: x = 3, y = 4, r = 5 orange
+14: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+15: It is Circle: x = 3, y = 4, r = 5 orange
+16: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+17: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+18: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
+19: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+20: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
+21: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+22: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
+23: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
+24: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
+
+Empty container. 
