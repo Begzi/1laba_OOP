@@ -14,4 +14,5 @@ void rectangle::Out(ofstream & ofst)
 {
 	ofst << "It is Rectangle: a = " << a
 		<< ", b = " << b << ", c = " << c << ", d = " << d;
+	OutShape(ofst);
 }

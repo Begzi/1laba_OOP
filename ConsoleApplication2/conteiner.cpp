@@ -15,13 +15,11 @@ void conteiner::Clear()
 
 void conteiner::OutConteiner(ofstream & ofst)
 {
-	string colorNames[] = { "red","orange","yellow","green","blue","violet" };
 	ofst << "Container contains " << len
 		<< " elements." << endl;
 	for (int i = 0; i < len; i++) {
 		ofst << i + 1 << ": ";
 		cont[i]->Out(ofst);
-		ofst << " " << colorNames[cont[i]->color].data() << endl; //стриг в чар, благодаря чар
 	}
 }
 

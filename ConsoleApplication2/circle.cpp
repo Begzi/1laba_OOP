@@ -14,4 +14,5 @@ void circle::Out(ofstream & ofst)
 {
 	ofst << "It is Circle: x = "
 		<< x << ", y = " << y << ", r = " << r;
+	OutShape(ofst);
 }

@@ -156,6 +156,7 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="rectangle.h" />
     <ClInclude Include="shape.h" />
+    <ClInclude Include="trangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circle.cpp" />

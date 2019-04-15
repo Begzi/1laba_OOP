@@ -5,11 +5,17 @@
 #include "conteiner.h"
 
 
-
-int main()
+int main(int argc, char* argv[])
 {
-	ifstream ifst("input.txt");  // файлы для ввода и вывода
-	ofstream ofst("output.txt"); // с ними было удобнее работать
+	if (argc != 3)
+	{
+		cout << "incorrect command line! "
+			"Waited: command in_file out_file"
+			<< endl;
+		exit(1);
+	}
+	ifstream ifst(argv[1]);
+	ofstream ofst(argv[2]);
 	cout << "Start";
 	conteiner c;
 	c.InConteiner(ifst);
