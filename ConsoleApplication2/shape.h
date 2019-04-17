@@ -18,6 +18,7 @@ class shape
 	color_shape color;
 public:
 
+	void OutShape(ofstream &ofst); //ничего не возращает
 	static shape* InGeneral(ifstream &ifst);
 	virtual void InData(ifstream &ifst) = 0;
 	virtual void Out(ofstream &ofst) = 0;

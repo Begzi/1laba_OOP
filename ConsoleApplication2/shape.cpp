@@ -25,19 +25,10 @@ shape * shape::InGeneral(ifstream &ifst)
 	sp->InData(ifst);
 	return sp;
 }
-/*
-shape * shape::OutShape(shape &s, ofstream &ofst)
+
+void shape::OutShape(ofstream &ofst)
 {
-	switch (s.k)
-	{
-	case shape::key::CIRCLE:
-		s.cir.OutCircle(s.cir, ofst);
-		break;
-	case shape::key::RECTANGLE:
-		s.r.OutRectangle(s.r, ofst);
-		break;
-	default:
-		ofst << "Incorrect figure!" << endl;
-	}
-	return nullptr;
-}*/
+	string colorNames[] = { "Red","orange","yellow","green","blue","violet" };
+	ofst << " " << colorNames[int(color)].data() << endl; //стриг в чар, благодаря чар
+	return;
+}
