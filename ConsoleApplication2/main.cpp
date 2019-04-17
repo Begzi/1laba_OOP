@@ -8,8 +8,8 @@
 
 int main()
 {
-	ifstream ifst("input.txt");  // файлы для ввода и вывода
-	ofstream ofst("output.txt"); // с ними было удобнее работать
+ifstream ifst("input.txt");  // файлы для ввода и вывода
+ofstream ofst("output.txt"); // с ними было удобнее работать
 	cout << "Start";
 	conteiner c;
 	c.InConteiner(ifst);
