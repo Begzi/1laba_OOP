@@ -11,6 +11,7 @@ public:
 	void OutConteiner(ofstream &ofst);
 	void InConteiner(ifstream &ifst);
 	void Clear();
+	void Sort(); // сортировка контейнера
 
 	~conteiner() { Clear(); }
 

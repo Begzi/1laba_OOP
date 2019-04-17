@@ -18,6 +18,7 @@ class shape
 	color_shape color;
 public:
 
+	bool Compare(shape &other);
 	static shape* InGeneral(ifstream &ifst); //может быть где угодно
 	void OutShape(ofstream &ofst); //ничего не возращает
 	virtual float CountPerimeter() = 0;
