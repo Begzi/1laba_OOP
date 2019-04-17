@@ -16,8 +16,7 @@ class shape
 
 	enum color_shape { RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET }; 
 	color_shape color;
-	enum material_shape {GOLD, TREE, IRON, PLASTIC, ARGENTUM};
-	material_shape material;
+	float	material;
 public:
 	static shape* InGeneral(ifstream &ifst); //может быть где угодно
 	void OutShape(ofstream &ofst); //ничего не возращает

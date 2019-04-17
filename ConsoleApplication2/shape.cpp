@@ -9,7 +9,7 @@ shape * shape::InGeneral(ifstream &ifst)
 	shape *sp;
 	int k;
 	int color;
-	int material;
+	float	material;
 	ifst >> k;
 	ifst >> color;
 	ifst >> material;
@@ -24,15 +24,16 @@ shape * shape::InGeneral(ifstream &ifst)
 		return 0;
 	}
 	sp->color = (shape::color_shape)(color - 1);
-	sp->material = (shape::material_shape)(material-1);
+	sp->material = material;
 	sp->InData(ifst);
 	return sp;
 }
 
 void shape::OutShape(ofstream &ofst)
 {
-	string materialShape[] { "gold", "tree", "iron", "plastic", "argentum" };
 	string colorNames[] = { "Red","orange","yellow","green","blue","violet" };
-	ofst << " " << colorNames[int(color)].data() << " " << materialShape[int(material)].data() << endl; //стриг в чар, благодаря чар
+	ofst << " " << colorNames[int(color)].data() << " p=" 
+		<<  material << "кг/м*м*м" 
+		<< endl; //стриг в чар, благодаря чар
 	return;
 }

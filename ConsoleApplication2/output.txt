@@ -1,8 +1,8 @@
 
 Filled container. 
 Container contains 3 elements.
-1: It is Circle: x = 3, y = 4, r = 5 orange gold
-2: It is Rectangle: a = 2, b = 3, c = 4, d = 4 orange gold
-3: It is Rectangle: a = 1, b = 2, c = 3, d = 5 yellow plastic
+1: It is Circle: x = 3, y = 4, r = 5 orange p=1.2Í„/Ï*Ï*Ï
+2: It is Rectangle: a = 2, b = 3, c = 4, d = 4 orange p=1.3Í„/Ï*Ï*Ï
+3: It is Rectangle: a = 1, b = 2, c = 3, d = 5 yellow p=4Í„/Ï*Ï*Ï
 
 Empty container. 
