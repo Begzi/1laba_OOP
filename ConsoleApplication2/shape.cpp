@@ -2,6 +2,7 @@
 #include "pch.h"
 #include "circle.h"
 #include "rectangle.h"
+#include "trangle.h"
 
 
 shape * shape::InGeneral(ifstream &ifst)
@@ -13,16 +14,18 @@ shape * shape::InGeneral(ifstream &ifst)
 	ifst >> color;
 	switch (k) {
 	case 2:
-		sp = new rectangle;        //создаётся виртуальные табилцы тут //мы носим с собой квадрат
-		sp->color = (shape::color_shape)(color - 1);		
+		sp = new rectangle;        //создаётся виртуальные табилцы тут //мы носим с собой квадрат	
 		break;
 	case 1:
 		sp = new circle;
-		sp->color = (shape::color_shape)(color - 1);
+		break;
+	case 3:
+		sp = new trangle;
 		break;
 	default:
 		return 0;
 	}
+	sp->color = (shape::color_shape)(color - 1);
 	sp->InData(ifst);
 	return sp;
 }
