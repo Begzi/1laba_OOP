@@ -14,14 +14,14 @@ class shape
 	key k; // ключ
 	// используемые альтернативы*/
 
-	enum color_shape { RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET };
+	enum color_shape { RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET }; 
 	color_shape color;
 public:
 
+	static shape* InGeneral(ifstream &ifst); //может быть где угодно
 	void OutShape(ofstream &ofst); //ничего не возращает
-	static shape* InGeneral(ifstream &ifst);
 	virtual void InData(ifstream &ifst) = 0;
 	virtual void Out(ofstream &ofst) = 0;
-	shape() {};
+	shape() {};//p[op[o[
 
 };
