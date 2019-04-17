@@ -12,6 +12,8 @@ void rectangle::InData(ifstream & ifst)
 
 void rectangle::Out(ofstream & ofst)
 {
+	string colorNames[] = { "red","orange","yellow","green","blue","violet" };
 	ofst << "It is Rectangle: a = " << a
 		<< ", b = " << b << ", c = " << c << ", d = " << d;
+	//ofst << " " << colorNames[(int)(color)].data() << endl; //стриг в чар, благодаря чар
 }

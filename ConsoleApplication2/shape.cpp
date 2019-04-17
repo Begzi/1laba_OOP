@@ -14,15 +14,14 @@ shape * shape::InGeneral(ifstream &ifst)
 	switch (k) {
 	case 2:
 		sp = new rectangle;
-		sp->color = (shape::color_shape)(color - 1);
 		break;
 	case 1:
 		sp = new circle;
-		sp->color = (shape::color_shape)(color - 1);
 		break;
 	default:
 		return 0;
 	}
+	sp->color = (shape::color_shape)(color - 1);
 	sp->InData(ifst);
 	return sp;
 }

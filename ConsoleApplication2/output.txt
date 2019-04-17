@@ -1,29 +1,5 @@
 
 Filled container. 
 Container contains 24 elements.
-1: It is Circle: x = 3, y = 4, r = 5 orange
-2: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-3: It is Circle: x = 3, y = 4, r = 5 orange
-4: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-5: It is Circle: x = 3, y = 4, r = 5 orange
-6: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-7: It is Circle: x = 3, y = 4, r = 5 orange
-8: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-9: It is Circle: x = 3, y = 4, r = 5 orange
-10: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-11: It is Circle: x = 3, y = 4, r = 5 orange
-12: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-13: It is Circle: x = 3, y = 4, r = 5 orange
-14: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-15: It is Circle: x = 3, y = 4, r = 5 orange
-16: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-17: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-18: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
-19: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-20: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
-21: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-22: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
-23: It is Rectangle: a = 3, b = 4, c = 2, d = 2 red
-24: It is Rectangle: a = 3, b = 4, c = 2, d = 2 blue
-
+1: It is Circle: x = 3, y = 4, r = 52: It is Rectangle: a = 3, b = 4, c = 2, d = 23: It is Circle: x = 3, y = 4, r = 54: It is Rectangle: a = 3, b = 4, c = 2, d = 25: It is Circle: x = 3, y = 4, r = 56: It is Rectangle: a = 3, b = 4, c = 2, d = 27: It is Circle: x = 3, y = 4, r = 58: It is Rectangle: a = 3, b = 4, c = 2, d = 29: It is Circle: x = 3, y = 4, r = 510: It is Rectangle: a = 3, b = 4, c = 2, d = 211: It is Circle: x = 3, y = 4, r = 512: It is Rectangle: a = 3, b = 4, c = 2, d = 213: It is Circle: x = 3, y = 4, r = 514: It is Rectangle: a = 3, b = 4, c = 2, d = 215: It is Circle: x = 3, y = 4, r = 516: It is Rectangle: a = 3, b = 4, c = 2, d = 217: It is Rectangle: a = 3, b = 4, c = 2, d = 218: It is Rectangle: a = 3, b = 4, c = 2, d = 219: It is Rectangle: a = 3, b = 4, c = 2, d = 220: It is Rectangle: a = 3, b = 4, c = 2, d = 221: It is Rectangle: a = 3, b = 4, c = 2, d = 222: It is Rectangle: a = 3, b = 4, c = 2, d = 223: It is Rectangle: a = 3, b = 4, c = 2, d = 224: It is Rectangle: a = 3, b = 4, c = 2, d = 2
 Empty container. 
