@@ -20,6 +20,7 @@ public:
 
 	static shape* InGeneral(ifstream &ifst); //может быть где угодно
 	void OutShape(ofstream &ofst); //ничего не возращает
+	virtual float CountPerimeter() = 0;
 	virtual void InData(ifstream &ifst) = 0;
 	virtual void Out(ofstream &ofst) = 0;
 	shape() {};//p[op[o[

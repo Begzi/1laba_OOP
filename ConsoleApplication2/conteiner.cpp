@@ -20,6 +20,8 @@ void conteiner::OutConteiner(ofstream & ofst)
 	for (int i = 0; i < len; i++) {
 		ofst << i + 1 << ": ";
 		cont[i]->Out(ofst);
+		cout << cont[i]->CountPerimeter();
+		cout << endl;
 	}
 }
 
