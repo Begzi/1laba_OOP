@@ -6,8 +6,8 @@
 
 using namespace std;
 
-class shape
-{
+class shape   //абстрактный класс, если хотя б 1 виртуальная функция, тело не обьязательно в дочерных
+{			//
 	
 	/*/ значения ключей для каждой из фигур
 	enum key { CIRCLE, RECTANGLE };
