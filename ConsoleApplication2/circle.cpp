@@ -16,3 +16,10 @@ void circle::Out(ofstream & ofst)
 		<< x << ", y = " << y << ", r = " << r;
 	OutShape(ofst);
 }
+
+void circle::OutCircle(ofstream & ofst)
+{
+	ofst << "It is Circle: x = "
+		<< x << ", y = " << y << ", r = " << r;
+	OutShape(ofst);
+}

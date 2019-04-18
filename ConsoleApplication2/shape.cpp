@@ -32,3 +32,7 @@ void shape::OutShape(ofstream &ofst)
 	ofst << " " << colorNames[int(color)].data() << endl; //стриг в чар, благодаря чар
 	return;
 }
+
+void shape::OutCircle(ofstream & ofst)
+{
+}

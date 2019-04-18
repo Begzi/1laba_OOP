@@ -22,6 +22,7 @@ public:
 	void OutShape(ofstream &ofst); //ничего не возращает
 	virtual void InData(ifstream &ifst) = 0;
 	virtual void Out(ofstream &ofst) = 0;
+	virtual void OutCircle(ofstream &ofst);
 	shape() {};//p[op[o[
 
 };
