@@ -35,6 +35,8 @@ shape * shape::InGeneral(ifstream &ifst)
 void shape::OutShape(ofstream &ofst)
 {
 	string colorNames[] = { "Red","orange","yellow","green","blue","violet" };
-	ofst << " " << colorNames[int(color)].data() << endl; //стриг в чар, благодаря чар
+	ofst << " " << colorNames[int(color)].data() << " p=" 
+		<<  material << "кг/м*м*м" 
+		<< endl; //стриг в чар, благодаря чар
 	return;
 }
