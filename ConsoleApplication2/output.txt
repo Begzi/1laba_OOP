@@ -1,8 +1,8 @@
 
 Filled container. 
 Container contains 3 elements.
-1: It is Trangle: x1 = 2, x2 = 2, y1 = 3, y2 = 3, z1 = 4, z2 = 4 orange p=4.5Í„/Ï*Ï*Ï
-2: It is Circle: x = 3, y = 2, r = 5 orange p=4Í„/Ï*Ï*Ï
+1: It is Circle: x = 3, y = 2, r = 5 orange p=4Í„/Ï*Ï*Ï
+2: It is Trangle: x1 = 2, x2 = 2, y1 = 3, y2 = 3, z1 = 4, z2 = 4 orange p=4.5Í„/Ï*Ï*Ï
 3: It is Rectangle: a = 1, b = 2, c = 5, d = 6 yellow p=2Í„/Ï*Ï*Ï
 
 Empty container. 
