@@ -14,3 +14,12 @@ void trangle::Out(ofstream & ofst)
 		<< ", z1 = " << z1 << ", z2 = " << z2;
 	OutShape(ofst);
 }
+
+float trangle::CountPerimeter()
+{
+	float P = sqrt((x1 - y1)*(x1 - y1) + (x2 - y2)*(x2 - y2))
+		+ sqrt((x1 - z1)*(x1 - z1) + (x2 - z2)*(x2 - z2))
+		+ sqrt((z1 - y1)*(z1 - y1) + (z2 - y2)*(z2 - y2));
+	//                 A__________B
+	return P;
+}
