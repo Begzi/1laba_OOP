@@ -13,7 +13,8 @@ void conteiner::Clear()
 	len = 0;
 }
 
-void conteiner::Sort() {
+void conteiner::Sort() 
+{
 	for (int i = 0; i < len - 1; i++) 
 	{
 		for (int j = i + 1; j < len; j++) 
