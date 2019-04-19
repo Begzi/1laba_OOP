@@ -22,3 +22,10 @@ float circle::CountPerimeter()
 	float P = PI * 2 * r;
 	return P;
 }
+
+void circle::OutCircle(ofstream & ofst)
+{
+	ofst << "It is Circle: x = "
+		<< x << ", y = " << y << ", r = " << r;
+	OutShape(ofst);
+}

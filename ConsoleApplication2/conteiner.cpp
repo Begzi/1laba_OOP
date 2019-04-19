@@ -33,9 +33,15 @@ void conteiner::OutConteiner(ofstream & ofst)
 {
 	ofst << "Container contains " << len
 		<< " elements." << endl;
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i < len; i++) 
+	{
 		ofst << i + 1 << ": ";
 		cont[i]->Out(ofst);
+	}
+	ofst << "FILTERED CONCLUSION" << endl;
+	for (int i = 0; i < len; i++) 
+	{
+		cont[i]->OutCircle(ofst);
 	}
 }
 

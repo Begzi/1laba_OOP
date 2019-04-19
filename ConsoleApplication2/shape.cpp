@@ -48,3 +48,7 @@ void shape::OutShape(ofstream &ofst)
 		<< endl; //стриг в чар, благодаря чар
 	return;
 }
+
+void shape::OutCircle(ofstream & ofst)
+{
+}

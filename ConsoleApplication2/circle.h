@@ -11,6 +11,7 @@ public:
 	
 	void InData(ifstream &ifst);
 	void Out(ofstream &ofst);
+	virtual void OutCircle(ofstream &ofst);
 	float CountPerimeter();
 
 };

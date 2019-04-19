@@ -25,6 +25,7 @@ public:
 	virtual float CountPerimeter() = 0;
 	virtual void InData(ifstream &ifst) = 0;
 	virtual void Out(ofstream &ofst) = 0;
+	virtual void OutCircle(ofstream &ofst);
 	shape() {};//p[op[o[
 
 };
