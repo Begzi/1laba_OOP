@@ -3,7 +3,7 @@
 
 class trangle : public shape
 {
-	int x, y, z; // центр круга and r
+	int x1,x2, y1,y2, z1,z2; // центр круга and r
 
 public:
 	trangle() {};
