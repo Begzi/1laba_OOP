@@ -16,3 +16,10 @@ void rectangle::Out(ofstream & ofst)
 		<< ", b = " << b << ", c = " << c << ", d = " << d;
 	OutShape(ofst);
 }
+
+float rectangle::CountPerimeter() // A{a,b} D{c,d} C{c,b} B{a,d}
+{								//
+	float P = sqrt((a-c)*(a-c)+(d-b)*(d-b));				
+									//                 A__________B
+	return P;						//	               |          |
+}									//                C|__________|D

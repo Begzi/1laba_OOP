@@ -10,5 +10,6 @@ public:
 
 	void InData(ifstream &ifst);
 	void Out(ofstream &ofst);
+	float CountPerimeter();
 
 };

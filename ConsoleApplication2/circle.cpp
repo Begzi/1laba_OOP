@@ -16,3 +16,9 @@ void circle::Out(ofstream & ofst)
 		<< x << ", y = " << y << ", r = " << r;
 	OutShape(ofst);
 }
+
+float circle::CountPerimeter()
+{
+	float P = PI * 2 * r;
+	return P;
+}

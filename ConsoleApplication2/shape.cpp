@@ -29,6 +29,7 @@ shape * shape::InGeneral(ifstream &ifst)
 	sp->color = (shape::color_shape)(color - 1);
 	sp->material = material;
 	sp->InData(ifst);
+	cout << sp->CountPerimeter() << endl;
 	return sp;
 }
 
