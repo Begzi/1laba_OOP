@@ -4,6 +4,13 @@
 #include "rectangle.h"
 #include "trangle.h"
 
+bool shape::Compare(shape & other)
+{
+
+	return CountPerimeter() < other.CountPerimeter();
+	return false;
+}
+
 shape * shape::InGeneral(ifstream &ifst)
 {
 	shape *sp;

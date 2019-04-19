@@ -20,6 +20,7 @@ int main(int argc, char* argv[])
 	cout << "Start";
 	conteiner c;
 	c.InConteiner(ifst);
+	c.Sort();
 	ofst << "\nFilled container. " << endl;
 	c.OutConteiner(ofst);
 	c.Clear();

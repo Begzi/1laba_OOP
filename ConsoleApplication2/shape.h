@@ -18,6 +18,8 @@ class shape   //абстрактный класс, если хотя б 1 виртуальная функция, тело не об
 	color_shape color;
 	float	material;
 public:
+
+	bool Compare(shape &other);
 	static shape* InGeneral(ifstream &ifst); //может быть где угодно
 	void OutShape(ofstream &ofst); //ничего не возращает
 	virtual float CountPerimeter() = 0;
