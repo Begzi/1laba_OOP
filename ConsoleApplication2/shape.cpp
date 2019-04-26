@@ -36,7 +36,6 @@ shape * shape::InGeneral(ifstream &ifst)
 	sp->color = (shape::color_shape)(color - 1);
 	sp->material = material;
 	sp->InData(ifst);
-	cout << sp->CountPerimeter() << endl;
 	return sp;
 }
 
@@ -44,7 +43,8 @@ void shape::OutShape(ofstream &ofst)
 {
 	string colorNames[] = { "Red","orange","yellow","green","blue","violet" };
 	ofst << " " << colorNames[int(color)].data() << " p=" 
-		<<  material << "кг/м*м*м" 
+		<<  material << "кг/м*м*м " 
+		<<"P = " << CountPerimeter() 
 		<< endl; //стриг в чар, благодаря чар
 	return;
 }

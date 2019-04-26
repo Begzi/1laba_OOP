@@ -19,7 +19,7 @@ void rectangle::Out(ofstream & ofst)
 
 float rectangle::CountPerimeter() // A{a,b} D{c,d} C{c,b} B{a,d}
 {								//
-	float P = sqrt((a-c)*(a-c)+(d-b)*(d-b));				
+	float P = 2*sqrt((a-c)*(a-c))*sqrt((d - b)*(d - b));//A-C получаем высоту D-C получаем ширину
 									//                 A__________B
 	return P;						//	               |          |
 }									//                C|__________|D
