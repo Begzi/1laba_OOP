@@ -1,8 +1,54 @@
 
 #include "pch.h"
 #include "conteiner.h"
+#include <string>
 
+bool conteiner::CheckForSymbol(ifstream &ifst)
+{
+	string buff;
+	getline(ifst, buff, '\0');
+	bool check = true;
+	int index = 0;
+	indexIgnore = 1;
+	while (buff[indexIgnore] != '\n')
+	{
+		indexIgnore++;
+	}
+	indexIgnore++;
+	for (int i = indexIgnore; i < buff.size(); i++)
+	{
+		if (!isdigit(buff[i]) && buff[i] != 32 && buff[i] != '\n')
+		{
+			if (buff[i] == '.'  && check && index == 2)
+			{
+				if (!isdigit(buff[i - 1]) || !isdigit(buff[i + 1]))
+				{
+					return false;
+				}
+				check = false;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else if (buff[i] == 32 && i > 0)
+		{
+			index++;
+			if (!isdigit(buff[i - 1]) || !isdigit(buff[i + 1]))
+			{
+				return false;
+			}
+		}
+		else if (buff[i] == '\n')
+		{
+			check = true;
+			index = 0;
+		}
 
+	}
+	return true;
+}
 
 void conteiner::Clear()
 {
@@ -47,6 +93,7 @@ void conteiner::OutConteiner(ofstream & ofst)
 
 void conteiner::InConteiner(ifstream & ifst)
 {
+	ifst.seekg(indexIgnore, iostream::beg);
 	while (!ifst.eof())
 	{
 		if (len < 50)

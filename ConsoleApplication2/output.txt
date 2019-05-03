@@ -1,10 +1,20 @@
 
 Filled container. 
-Container contains 3 elements.
-1: It is Rectangle: a = 1, b = 2, c = 5, d = 9 yellow p=2Í„/Ï*Ï*Ï P = 56
-2: It is Circle: x = 3, y = 2, r = 5 orange p=4Í„/Ï*Ï*Ï P = 31.4159
-3: It is Trangle: x1 = 2, x2 = 2, y1 = 3, y2 = 3, z1 = 4, z2 = 4 orange p=4.5Í„/Ï*Ï*Ï P = 5.65685
+Container contains 8 elements.
+1: It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+2: It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+3: It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+4: It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+5: It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+6: It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+7: It is Trangle: x1 = 33, x2 = 2, y1 = 33, y2 = 2, z1 = 4, z2 = 5 orange p=3.8Í„/Ï*Ï*Ï P = 58.3095
+8: It is Rectangle: a = 3, b = 4, c = 5, d = 6 orange p=2Í„/Ï*Ï*Ï P = 8
 FILTERED CONCLUSION
-It is Circle: x = 3, y = 2, r = 5 orange p=4Í„/Ï*Ï*Ï P = 31.4159
+It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
+It is Circle: x = 33, y = 2, r = 33 orange p=3.8Í„/Ï*Ï*Ï P = 207.345
 
 Empty container. 

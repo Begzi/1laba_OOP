@@ -20,6 +20,6 @@ float trangle::CountPerimeter()
 	float P = sqrt((x1 - y1)*(x1 - y1) + (x2 - y2)*(x2 - y2))
 		+ sqrt((x1 - z1)*(x1 - z1) + (x2 - z2)*(x2 - z2))
 		+ sqrt((z1 - y1)*(z1 - y1) + (z2 - y2)*(z2 - y2));
-	//                 A__________B
-	return P;
-}
+					//                    X____Y
+	return P;		//					   \  /
+}					//						\/Z

@@ -15,17 +15,26 @@ int main(int argc, char* argv[])
 			<< endl;
 		exit(1);
 	}
+	ifstream ifst1(argv[1]);
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
-	cout << "Start";
 	conteiner c;
-	c.InConteiner(ifst);
-	c.Sort();
-	ofst << "\nFilled container. " << endl;
-	c.OutConteiner(ofst);
-	c.Clear();
-	ofst << "\nEmpty container. " << endl;
-	cout << "\nStop" << endl;
+	bool check = c.CheckForSymbol(ifst1);
+	if (check)
+	{
+		cout << "Start";
+		c.InConteiner(ifst);
+		c.Sort();
+		ofst << "\nFilled container. " << endl;
+		c.OutConteiner(ofst);
+		c.Clear();
+		ofst << "\nEmpty container. " << endl;
+		cout << "\nStop" << endl;
+	}
+	else
+	{
+		cout << "Symbol in input.txt" << endl;
+	}
 	return 0;
 
 }
