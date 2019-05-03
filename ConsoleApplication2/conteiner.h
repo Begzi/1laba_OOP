@@ -14,6 +14,7 @@ public:
 	void InConteiner(ifstream &ifst);
 	void Clear();
 	void Sort(); // сортировка контейнера
+	void MultiMethod(ofstream &ofst);
 
 
 	~conteiner() { Clear(); }

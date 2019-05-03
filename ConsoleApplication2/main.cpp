@@ -27,6 +27,7 @@ int main(int argc, char* argv[])
 		c.Sort();
 		ofst << "\nFilled container. " << endl;
 		c.OutConteiner(ofst);
+		c.MultiMethod(ofst);
 		c.Clear();
 		ofst << "\nEmpty container. " << endl;
 		cout << "\nStop" << endl;

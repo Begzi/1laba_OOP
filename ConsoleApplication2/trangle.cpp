@@ -23,3 +23,23 @@ float trangle::CountPerimeter()
 					//                    X____Y
 	return P;		//					   \  /
 }					//						\/Z
+
+void trangle::MultiMethod(shape * other, ofstream & ofst)
+{
+	other->MMTrangle(ofst);
+}
+
+void trangle::MMRect(ofstream & ofst)
+{
+	ofst << "Trangle and Rectangle" << endl;
+}
+
+void trangle::MMCircle(ofstream & ofst)
+{
+	ofst << "Trangle and Circle" << endl;
+}
+
+void trangle::MMTrangle(ofstream & ofst)
+{
+	ofst << "Trangle and Trangle" << endl;
+}

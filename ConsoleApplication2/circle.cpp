@@ -23,6 +23,26 @@ float circle::CountPerimeter()
 	return P;
 }
 
+void circle::MultiMethod(shape * other, ofstream & ofst)
+{
+	other->MMCircle(ofst);
+}
+
+void circle::MMRect(ofstream & ofst)
+{
+	ofst << "Circle and Rectangle" << endl;
+}
+
+void circle::MMCircle(ofstream & ofst)
+{
+	ofst << "Circle and Circle" << endl;
+}
+
+void circle::MMTrangle(ofstream & ofst)
+{
+	ofst << "Circle and Trangle" << endl;
+}
+
 void circle::OutCircle(ofstream & ofst)
 {
 	ofst << "It is Circle: x = "

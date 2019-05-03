@@ -26,6 +26,10 @@ public:
 	virtual void InData(ifstream &ifst) = 0;
 	virtual void Out(ofstream &ofst) = 0;
 	virtual void OutCircle(ofstream &ofst);
+	virtual void MultiMethod(shape *other, ofstream &ofst)=0;
+	virtual void MMRect(ofstream &ofst)=0;
+	virtual void MMCircle(ofstream &ofst)=0;
+	virtual void MMTrangle(ofstream &ofst)=0;
 	shape() {};//p[op[o[
 
 };

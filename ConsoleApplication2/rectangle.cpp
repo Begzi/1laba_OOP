@@ -23,3 +23,23 @@ float rectangle::CountPerimeter() // A{a,b} D{c,d} C{c,b} B{a,d}
 									//                 A__________B
 	return P;						//	               |          |
 }									//                C|__________|D
+
+void rectangle::MultiMethod(shape * other, ofstream & ofst)
+{
+	other->MMRect(ofst);
+}
+
+void rectangle::MMRect(ofstream & ofst)
+{
+	ofst << "Rectangle and Rectangle" << endl;
+}
+
+void rectangle::MMCircle(ofstream & ofst)
+{
+	ofst << "Rectangle and Circle" << endl;
+}
+
+void rectangle::MMTrangle(ofstream & ofst)
+{
+	ofst << "Rectangle and Trangle" << endl;
+}
