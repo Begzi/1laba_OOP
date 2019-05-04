@@ -10,6 +10,8 @@ bool conteiner::CheckForSymbol(ifstream &ifst)
 	bool check = true;
 	int index = 0;
 	indexIgnore = 1;
+	char l = '2';
+	
 	while (buff[indexIgnore] != '\n')
 	{
 		indexIgnore++;
@@ -17,7 +19,7 @@ bool conteiner::CheckForSymbol(ifstream &ifst)
 	indexIgnore++;
 	for (int i = indexIgnore; i < buff.size(); i++)
 	{
-		if (!isdigit(buff[i]) && buff[i] != 32 && buff[i] != '\n')
+		if (!isdigit(reinterpret_cast<unsigned char&>(buff[i])) && buff[i] != 32 && buff[i] != '\n')
 		{
 			if (buff[i] == '.'  && check && index == 2)
 			{
@@ -127,4 +129,4 @@ void conteiner::MultiMethod(ofstream &ofst)
 			cont[j]->Out(ofst);
 		}
 	}
-}
+}

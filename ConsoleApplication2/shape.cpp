@@ -31,6 +31,12 @@ shape * shape::InGeneral(ifstream &ifst)
 		color = 1;
 	}
 	ifst >> material;
+	if (material < 1)
+	{
+		cout << endl << "P must be > 0" << endl;
+		k = 0;
+		material = 1;
+	}
 	string buff;
 	int index = 0;
 	int bufer = ifst.tellg();
@@ -42,60 +48,63 @@ shape * shape::InGeneral(ifstream &ifst)
 			index++;
 		}
 	}
-	ifst.seekg(bufer, iostream::beg);
-	if (material < 1)
+	if (index != 0)
 	{
-		cout << endl << "P must be > 0" << endl;
-		k = 0;
-		material = 1;
+		ifst.seekg(bufer, iostream::beg);
+		switch (k)
+		{
+		case 2:
+			if (index == 4)
+			{
+				sp = new rectangle;
+				break;
+			}
+			else
+			{
+				ifst.seekg(1, ios_base::end); //в последний символ файла
+				ifst >> k; // читаем жтот символ
+				cout << endl << "not enough or more coordinates for rectangle";
+				return 0;
+			}
+		case 1:
+			if (index == 3)
+			{
+				sp = new circle;
+				break;
+			}
+			else
+			{
+				ifst.seekg(1, ios_base::end); //в последний символ файла
+				ifst >> k; // читаем жтот символ
+				cout << endl << "not enough or more  coordinates for circle";
+				return 0;
+			}
+		case 3:
+			if (index == 6)
+			{
+				sp = new trangle;
+				break;
+			}
+			else
+			{
+				ifst.seekg(1, ios_base::end); //в последний символ файла
+				ifst >> k; // читаем жтот символ
+				cout << endl << "not enough or more coordinates for trangle";
+				return 0;
+			}
+		default:
+			return 0;
+		}
+		sp->color = (shape::color_shape)(color - 1);
+		sp->material = material;
+		sp->InData(ifst);
+		return sp;
 	}
-	switch (k) {
-	case 2:
-		if (index == 4)
-		{
-			sp = new rectangle;
-			break;
-		}
-		else
-		{
-			ifst.seekg(1, ios_base::end); //в последний символ файла
-			ifst >> k; // читаем жтот символ
-			cout << endl << "not enough or more coordinates for rectangle";
-			return 0;
-		}
-	case 1:
-		if (index == 3)
-		{
-			sp = new circle;
-			break;
-		}
-		else
-		{
-			ifst.seekg(1, ios_base::end); //в последний символ файла
-			ifst >> k; // читаем жтот символ
-			cout << endl << "not enough or more  coordinates for circle";
-			return 0;
-		}
-	case 3:
-		if (index == 6)
-		{
-			sp = new trangle;
-			break;
-		}
-		else
-		{
-			ifst.seekg(1, ios_base::end); //в последний символ файла
-			ifst >> k; // читаем жтот символ
-			cout << endl << "not enough or more coordinates for trangle";
-			return 0;
-		}
-	default:
+	else
+	{
+		cout << endl << "not enough or more coordinates";
 		return 0;
 	}
-	sp->color = (shape::color_shape)(color - 1);
-	sp->material = material;
-	sp->InData(ifst);
-	return sp;
 }
 
 void shape::OutShape(ofstream &ofst)
